@@ -7,8 +7,9 @@ const todosSlice = createSlice({
   },
   reducers: {
     todoAdded(state, action) {
-      // update meeee
-    },
+      // using createSlice lets us mutate state!
+      state.entities.push(action.payload);
+    }, 
   },
 });
 
